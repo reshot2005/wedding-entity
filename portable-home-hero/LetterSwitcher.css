@@ -1,0 +1,22 @@
+.letter-switcher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.letter-switcher__char {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+.letter-switcher__char > div {
+  display: block;
+}

@@ -1,0 +1,24 @@
+Behavior to match exactly
+
+After the preloader finishes, mount <HomeLanding ready />.
+Four-line serif headline:
+Line 1 cycles: Weddings → Moments → Something → Different via LetterSwitcher (each letter slides out y: -100%, new letters slide in from y: 100%). Cycle starts 0.5s after ready, then every 6s + 2s repeatDelay.
+Lines 2–4 are static: that / never / fade.
+Entrance: each line slides up from translateY(100%) with delays 0.15s / 0.3s / 0.45s / 0.6s and cubic-bezier(0.445, 0.05, 0.55, 0.95).
+Scroll-driven spread using CSS --progress (GSAP ScrollTrigger, scrub, section start: "top top" / end: "bottom top"):
+first word: translateY(-42vw * progress)
+that: right + up (28%, -32vw)
+never: left + up (-28%, -22vw)
+fade stays more in view
+Full-bleed background image, sticky 100vh stage, section height 180vh.
+Bottom bar: Emily & David left, See Project right (underline on hover). Hide on mobile. Fade out with --progress.
+Font: BerlingskeSerif 300 for the headline (clamp(55px, 15vw, 235px) / 1.175), Inter for the project bar.
+Integration rules
+
+Remove or unmount the old first-section/hero only. Do not delete the preloader, nav, or later sections.
+Render HomeLanding as the first content after the preloader, e.g. <HomeLanding ready={preloaderDone} backgroundSrc="/images/hero_wedding.png" />.
+Keep ready={false} until the preloader is done, then set it true so the entrance plays once.
+Do not change the animation values, word list, or layout math.
+If this app uses Lenis/smooth scroll, call ScrollTrigger.update() on that scroller so --progress stays in sync.
+Done when After preload, the beach hero shows Weddings that never fade, letters morph through the four words, scrolling spreads the lines, and Emily & David stays at the bottom until you scroll past.
+

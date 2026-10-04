@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Entity Silk";
+  src: url("/fonts/silktype_-_silkserif-extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Silk";
+  src: url("/fonts/silk_serif_extralight_italic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Silk";
+  src: url("/fonts/silktype_-_silkserif-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Silk";
+  src: url("/fonts/silktype_-_silk_serif_light_italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Eaves";
+  src: url("/fonts/mreavesmodot-reg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Sans";
+  src: url("/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Signature";
+  src: url("/fonts/bonvivant.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Canela";
+  src: url("/fonts/canela-thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Sackers";
+  src: url("/fonts/sackersgothicmediumat.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Futura";
+  src: url("/fonts/futurapt-demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Quarto";
+  src: url("/fonts/quarto-light_7.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Quarto";
+  src: url("/fonts/quarto-lightitalic_4.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Switzer";
+  src: url("/fonts/switzer-extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Switzer";
+  src: url("/fonts/switzer-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Montserrat";
+  src: url("/fonts/montserrat-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Futura LT";
+  src: url("/fonts/futura_lt_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Entity Didot";
+  src: url("/fonts/awconquerordidot-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Silk Serif Extra Light";
+  src: url("/fonts/silktype_-_silkserif-extralight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Silk Serif Extra Light Italic";
+  src: url("/fonts/silk_serif_extralight_italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Silk Serif Light";
+  src: url("/fonts/silktype_-_silkserif-light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Silk Serif Light Italic";
+  src: url("/fonts/silktype_-_silk_serif_light_italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mr Eaves Mod Regular";
+  src: url("/fonts/mreavesmodot-reg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BonVivant";
+  src: url("/fonts/bonvivant.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela Thin";
+  src: url("/fonts/canela-thin.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sackers Medium";
+  src: url("/fonts/sackersgothicmediumat.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

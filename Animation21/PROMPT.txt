@@ -1,0 +1,53 @@
+Copy-paste this prompt into Cursor in the OTHER project (the landing page):
+
+---
+
+You are integrating the folder `Animation21` into this landing page as SECTION 3 (the third full-page / long-scroll section after hero and section 2).
+
+SOURCE
+- Folder: Animation21
+- Original demo: Codrops “On-Scroll Image Layout Animations”
+- Tech: GSAP 3 + Flip + ScrollTrigger, Lenis, imagesLoaded
+- Files (use these, do not rewrite from memory):
+  - Animation21/index.html          (full markup, including gallery-7 with every gallery__item)
+  - Animation21/css/base.css        (full stylesheet)
+  - Animation21/js/index.js
+  - Animation21/js/utils.js
+  - Animation21/js/gsap.min.js
+  - Animation21/js/Flip.min.js
+  - Animation21/js/ScrollTrigger.min.js
+  - Animation21/js/lenis.min.js
+  - Animation21/js/imagesloaded.pkgd.min.js
+
+GOAL
+Turn this standalone full-page demo into the 3rd section of THIS landing page. Keep the scroll-driven Flip layout morphs. Match this project’s look, copy, and images. Do not break sections 1, 2, footer, nav, or existing scroll.
+
+HOW TO BUILD IT
+1. Copy Animation21 into this repo (e.g. src/sections/Animation21 or public/animation21). Import CSS + JS into the landing page — do not iframe it.
+2. Wrap the demo’s <main> content in a section:
+   <section id="section-3" class="landing-section landing-section--animation21"> … </section>
+   Place it as the third section in the page flow (after section 2, before footer / section 4).
+3. Keep ALL 8 galleries (#gallery-1 … #gallery-8) and the exact gallery-7 item list from index.html. Do not collapse or “simplify” gallery-7.
+4. Scope CSS: prefix / nest base.css under `.landing-section--animation21` so body/html/main/frame rules do not restyle the rest of the site. Keep gallery, caption, project, and .gallery--switch rules intact — those class toggles are what Flip animates.
+5. Do NOT use a second Lenis instance if this site already has Lenis/ScrollSmoother/locomotive. Hook the existing smoother to ScrollTrigger.update(). If the site has native scroll only, init Lenis once at app level, not inside the section.
+6. Register plugins once: gsap.registerPlugin(Flip, ScrollTrigger). Run triggerFlipOnScroll only after the section is in the DOM (and after imagesLoaded on `.gallery__item` with { background: true }).
+7. Pin `galleryEl.parentNode` (the .gallery-wrap), scrub: true, same Flip settings as index.js:
+   - gallery-1: absoluteOnLeave: true, scale: false
+   - gallery-2: defaults
+   - gallery-3: absolute: true, scale: false, end: '+=900%', stagger: 0.05
+   - gallery-4, 5, 6, 7: defaults
+   - gallery-8: scale: false
+8. Skip missing galleries (there is no #gallery-9). Guard: if (!galleryElement) return;
+9. Replace img/1.jpg … img/69.jpg with this product’s images (same counts per gallery). Keep background-image on .gallery__item / .gallery__item-inner. Preload before creating Flip states or layouts will be wrong.
+10. Replace the demo “AI Art / Creativity Redefined” copy and .frame header with this landing page’s section 3 headline, subcopy, and CTA. Keep the gallery DOM structure and class names (gallery, gallery__item, gallery--switch, caption, size modifiers).
+11. Respect prefers-reduced-motion: skip Flip/pin, show the .gallery--switch (final) layout statically.
+12. If this app is React/Next/Vue: port markup to a Section3 component, run Flip setup in useGSAP / onMounted, revert ScrollTriggers and gsap.context on unmount. Do not use type="module" script tags if the bundler already imports GSAP.
+13. Verify in the browser: scroll from top through sections 1 → 2 → 3 → rest. Each gallery in section 3 must pin, morph to the switch layout, then release. Nav/hero/section 2 must still work. Desktop and mobile.
+
+CONSTRAINTS
+- Do not rewrite Flip logic from scratch.
+- Do not drop gallery-7 items.
+- Do not let Animation21 body.loading overlay cover the whole site — loader only for this section, or remove it.
+- Do not globally set overflow:hidden on html/body from this demo if it traps the landing page.
+
+---

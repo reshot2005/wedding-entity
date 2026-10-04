@@ -1,0 +1,221 @@
+:root {
+  --entity-paper: #ffffff;
+  --entity-ivory: #f9f7f4;
+  --entity-panel: #f4eee7;
+  --entity-sand: #f0e6d4;
+  --entity-control: #ece6df;
+  --entity-ink: #343434;
+  --entity-copy: #666666;
+  --entity-muted: #8c8c8c;
+  --entity-dim: #999999;
+  --entity-bronze: #998675;
+  --entity-sage: #687a7b;
+  --entity-rule: #dfdeda;
+  --entity-gold: #c7b299;
+
+  --color-cream: #f9f7f4;
+  --color-white: #ffffff;
+  --color-dark: #343434;
+  --color-teal: #687a7b;
+  --color-tan: #f0e6d4;
+  --color-border: #dfdeda;
+  --color-gold: #c7b299;
+  --color-menu-bg: #f4eee7;
+  --color-nav-btn: #ece6df;
+  --color-nav-label: rgba(153, 134, 117, 1);
+  --color-text-dark: rgba(52, 52, 52, 1);
+  --color-text-mid: rgba(102, 102, 102, 1);
+  --color-text-light: rgba(140, 140, 140, 1);
+  --color-text-white: rgba(255, 255, 255, 1);
+  --color-text-muted: rgba(153, 153, 153, 1);
+  --color-link: #998675;
+
+  --entity-canvas: 1200px;
+  --entity-desktop-start: 768px;
+  --entity-header-height: 106px;
+  --entity-header-height-compact: 54px;
+  --breakpoint: 768px;
+  --container-desktop: 1200px;
+  --container-mobile: 320px;
+
+  --navbar-height-desktop: 106px;
+  --navbar-height-mobile: 54px;
+
+  --hero-h-desktop: 1003px;
+  --studio-h-desktop: 1691px;
+  --knownfor-h-desktop: 956px;
+  --atelier-h-desktop: 903px;
+  --press-h-desktop: 425px;
+  --discover-h-desktop: 1087px;
+  --video-h-desktop: 722px;
+  --portfolio-h-desktop: 1984px;
+  --kindwords-h-desktop: 793px;
+  --publications-h-desktop: 1716px;
+  --feature-gallery-h-desktop: 856px;
+  --printshop-h-desktop: 819px;
+  --edu-h-desktop: 750px;
+  --inquire-h-desktop: 809px;
+  --footer-h-desktop: 763px;
+
+  --hero-h-mobile: 536px;
+  --studio-h-mobile: 933px;
+  --knownfor-h-mobile: 483px;
+  --atelier-h-mobile: 769px;
+  --press-h-mobile: 383px;
+  --discover-h-mobile: 779px;
+  --video-h-mobile: 233px;
+  --portfolio-h-mobile: 1167px;
+  --kindwords-h-mobile: 855px;
+  --publications-h-mobile: 1267px;
+  --feature-gallery-h-mobile: 548px;
+  --printshop-h-mobile: 1004px;
+  --edu-h-mobile: 799px;
+  --inquire-h-mobile: 455px;
+  --footer-h-mobile: 937px;
+
+  --portfolio-col-left: 542px;
+  --portfolio-col-right: 521px;
+  --portfolio-full-width: 1063px;
+  --portfolio-card-height: 704px;
+  --portfolio-full-height: 779px;
+  --pub-col-left: 362px;
+  --pub-col-right: 635px;
+  --pub-bottom-col: 317px;
+  --pub-card-height-top: 464px;
+  --pub-card-height-bottom: 453px;
+  --split-half: 600px;
+
+  --entity-font-display: "Entity Silk", "Silk Serif Extra Light", "Times New Roman", serif;
+  --entity-font-display-italic: "Entity Silk", "Silk Serif Extra Light Italic", "Times New Roman", serif;
+  --entity-font-body: "Entity Sans", "Nunito", Arial, sans-serif;
+  --entity-font-ui: "Entity Eaves", "Mr Eaves Mod Regular", Arial, sans-serif;
+  --entity-font-smallcaps: "Entity Sackers", "Sackers Medium", Arial, sans-serif;
+  --entity-font-quote: "Entity Canela", "Canela Thin", "Times New Roman", serif;
+  --entity-font-script: "Entity Signature", "BonVivant", cursive;
+
+  --entity-body-size: 15px;
+  --entity-body-leading: 1.7;
+  --entity-label-size: 13px;
+  --entity-hero-size: 180px;
+  --entity-heading-size: 80px;
+  --entity-quote-size: 42px;
+
+  --fs-hero: 180px;
+  --fs-section-heading: 80px;
+  --fs-portfolio-card: 75px;
+  --portfolio-card: 75px;
+  --fs-quote: 42px;
+  --fs-footer-heading: 35px;
+  --fs-signature: 33px;
+  --fs-body: 15px;
+  --fs-body-alt: 14px;
+  --fs-subheading: 13px;
+  --fs-button-label: 12px;
+  --fs-ui-small: 11px;
+
+  --fs-hero-mobile: 50px;
+  --fs-section-heading-mobile: 45px;
+  --fs-portfolio-card-mobile: 30px;
+  --fs-quote-mobile: 22px;
+  --fs-footer-heading-mobile: 37px;
+  --fs-signature-mobile: 24px;
+  --fs-body-mobile: 14px;
+  --fs-subheading-mobile: 11px;
+
+  --lh-hero: 0.8;
+  --lh-section: 1;
+  --lh-tight: 0.9;
+  --lh-quote: 1.2;
+  --lh-quote-mobile: 1.3;
+  --lh-body: 1.7;
+  --lh-subheading: 1.8;
+  --lh-signature: 1.6;
+
+  --ls-hero: 0.1em;
+  --ls-hero-mobile: 0.04em;
+  --ls-subheading: 0.15em;
+  --ls-wide: 0.2em;
+  --ls-signature: 0.03em;
+
+  --duration-fade: 0.5s;
+  --duration-menu: 0.7s;
+  --duration-section: 1s;
+  --duration-lazy: 400ms;
+  --duration-hover: 0.5s;
+
+  --hero-slide-interval: 1.7s;
+  --studio-slide-interval: 1.5s;
+  --feature-slide-interval: 4s;
+
+  --entity-layer-header: 50;
+  --entity-layer-shade: 90;
+  --entity-layer-drawer: 100;
+  --entity-ease: cubic-bezier(0.76, 0, 0.24, 1);
+  --z-base: 0;
+  --z-slideshow: 1;
+  --z-text-overlay: 2;
+  --z-navbar: 5;
+  --z-menu-overlay: 10;
+
+  --opacity-hero-slides: 0.9;
+  --opacity-knownfor-video: 0.9;
+  --opacity-inquire-video: 0.8;
+  --opacity-atelier-marks: 0.8;
+  --opacity-hover: 0.8;
+  --opacity-footer-logo: 0.65;
+
+  --parallax-about-left: 30;
+  --parallax-about-right: 50;
+  --parallax-portfolio-full: 25;
+  --parallax-printshop-left: 60;
+  --parallax-printshop-right: 20;
+
+  --hero-hamburger-x: 18px;
+  --hero-hamburger-y: 6px;
+  --hero-hamburger-w: 37px;
+  --hero-hamburger-h: 52px;
+  --hero-menu-text-x: 59px;
+  --hero-menu-text-y: 21px;
+  --hero-title-x: -17px;
+  --hero-title-y: 360px;
+  --hero-title-w: 1234px;
+  --hero-title-h: 229px;
+  --hero-subtext-x: 267px;
+  --hero-subtext-y: 604px;
+  --hero-subtext-w: 666px;
+  --hero-subtext-h: 21px;
+  --hero-ig-x: 1109px;
+  --hero-ig-y: 21px;
+  --hero-pin-x: 1161px;
+  --hero-pin-y: 23px;
+  --hero-fb-x: 1134px;
+  --hero-fb-y: 21px;
+
+  --nav-contact-btn-x: 1082px;
+  --nav-contact-btn-y: 31px;
+  --nav-contact-btn-w: 92px;
+  --nav-contact-btn-h: 38px;
+  --nav-hamburger-x: 25px;
+  --nav-hamburger-y: 26px;
+  --nav-logo-x: 61px;
+  --nav-logo-y: 15px;
+  --nav-logo-w: 252px;
+  --nav-logo-h: 74px;
+  --nav-links-start-x: 411px;
+  --nav-links-y: 42px;
+
+  --btn-border-width: 1px;
+  --btn-border-color: var(--color-border);
+  --btn-border-radius: 0px;
+  --btn-padding-x: 24px;
+  --btn-padding-y: 12px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --entity-hero-size: 50px;
+    --entity-heading-size: 45px;
+    --entity-quote-size: 22px;
+    --entity-label-size: 11px;
+  }
+}

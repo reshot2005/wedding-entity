@@ -1,0 +1,707 @@
+.valuesBand,
+.discovery,
+.filmDivider,
+.portfolio,
+.kindWords {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.valuesBand {
+  align-items: center;
+  background: #f9f7f4;
+  color: #666;
+  display: flex;
+  height: 425px;
+  justify-content: center;
+}
+
+.valuesInner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(100%, 1200px);
+}
+
+.valuesCopy {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  padding-inline: 24px;
+}
+
+.valuesMarks {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  padding-inline: 24px;
+}
+
+.valuesMark {
+  display: block;
+  color: #8c8c8c;
+  font-family: "Sackers Medium", "Entity Sackers", Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  line-height: 28px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.valuesCopy p {
+  font-family: "Nunito", "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  text-align: center;
+}
+
+.discovery {
+  background: #f9f7f4;
+  color: #666;
+  height: 1087px;
+  overflow: hidden;
+}
+
+.discoveryStage {
+  height: 1087px;
+  margin: 0 auto;
+  position: relative;
+  width: 1200px;
+}
+
+.discoveryPrimary,
+.discoverySecondary {
+  overflow: hidden;
+  position: absolute;
+}
+
+.discoveryPrimary {
+  height: 771px;
+  left: 0;
+  top: 0;
+  width: 589px;
+}
+
+.discoverySecondary {
+  height: 771px;
+  left: 617px;
+  top: 316px;
+  width: 583px;
+}
+
+.discoveryPrimary img,
+.discoverySecondary img,
+.kindWordsImage img,
+.workPanel img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.discoveryScript {
+  font-family: "Silk Serif Extra Light Italic", "Quarto", Georgia, serif;
+  font-size: 180px;
+  font-style: italic;
+  font-weight: 200;
+  left: 155px;
+  line-height: 0.8;
+  margin: 0;
+  position: absolute;
+  top: 267px;
+  z-index: 2;
+}
+
+.discoveryHeadline {
+  left: 617px;
+  margin: 0;
+  position: absolute;
+  top: 86px;
+  width: 440px;
+  z-index: 2;
+}
+
+.discoveryHeadline p {
+  margin: 0;
+}
+
+.displayCaps,
+.displayItalic {
+  font-family: "Silk Serif Extra Light", "Quarto", Georgia, serif;
+  font-size: 80px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.displayCaps {
+  text-transform: uppercase;
+}
+
+.displayItalic {
+  font-family: "Silk Serif Extra Light Italic", "Quarto", Georgia, serif;
+  font-style: italic;
+}
+
+.discoverySmall,
+.discoveryBody {
+  font-family: "Nunito", "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.discoveryBody {
+  left: 617px;
+  margin: 0;
+  position: absolute;
+  top: 861px;
+  width: 440px;
+  z-index: 2;
+}
+
+.discoveryBody em {
+  font-family: "Silk Serif Light Italic", "Quarto", Georgia, serif;
+  font-style: italic;
+}
+
+.filmDivider {
+  background: #111;
+  height: 722px;
+  overflow: hidden;
+}
+
+.desktopFilm,
+.mobileFilm {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.mobileFilm {
+  display: none;
+}
+
+.portfolio {
+  background: #343434;
+  color: #fff;
+  height: 1984px;
+}
+
+.portfolioStage {
+  height: 1984px;
+  margin: 0 auto;
+  position: relative;
+  width: 1200px;
+}
+
+.portfolioEyebrow {
+  font-family: "Mr Eaves Mod Regular", "Futura LT", Arial, sans-serif;
+  font-size: 13px;
+  left: 426px;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 110px;
+  width: 348px;
+}
+
+.portfolioTitle {
+  font-family: "Silk Serif Extra Light", "Quarto", Georgia, serif;
+  font-size: 180px;
+  font-weight: 200;
+  left: -1px;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 152px;
+  width: 1202px;
+}
+
+.portfolioGrid {
+  inset: 0;
+  position: absolute;
+}
+
+.workPanel {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+}
+
+.workPanelweddings {
+  height: 704px;
+  left: 69px;
+  top: 299px;
+  width: 542px;
+}
+
+.workPanelportraits {
+  height: 704px;
+  left: 611px;
+  top: 299px;
+  width: 521px;
+}
+
+.workPaneleditorial {
+  height: 779px;
+  left: 69px;
+  top: 1002px;
+  width: 1063px;
+}
+
+.workRevealImage,
+.workCoverImage,
+.workShade,
+.workRevealCopy {
+  inset: 0;
+  position: absolute;
+}
+
+.workRevealImage {
+  z-index: 0;
+}
+
+.workShade {
+  background: rgb(0 0 0 / 35%);
+  z-index: 1;
+}
+
+.workRevealCopy {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  z-index: 3;
+}
+
+.workRevealTitle {
+  font-family: "Silk Serif Extra Light", "Quarto", Georgia, serif;
+  font-size: 75px;
+  font-weight: 200;
+  line-height: 1;
+  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lightButton,
+.portfolioButton {
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgb(255 255 255 / 55%);
+  color: #fff;
+  display: inline-flex;
+  font-family: "Mr Eaves Mod Regular", "Futura LT", Arial, sans-serif;
+  font-size: 12px;
+  height: 47px;
+  justify-content: center;
+  letter-spacing: 0.15em;
+  padding-inline: 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.workCoverImage {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  z-index: 2;
+}
+
+.workMobileTitle {
+  display: none;
+}
+
+.workPanel:hover .workCoverImage,
+.workPanel:focus-visible .workCoverImage {
+  opacity: 0;
+}
+
+.workPanel:hover .workRevealCopy,
+.workPanel:focus-visible .workRevealCopy {
+  opacity: 1;
+}
+
+.workPanel:focus-visible,
+.portfolioButton:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.portfolioButton {
+  left: 505px;
+  padding-inline: 0;
+  position: absolute;
+  top: 1857px;
+  width: 190px;
+}
+
+.portfolioButton:hover,
+.portfolioButton:focus-visible,
+.lightButton:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+.kindWords {
+  background: #fff;
+  color: #343434;
+  height: 793px;
+  overflow: hidden;
+}
+
+.kindWordsStage {
+  height: 793px;
+  margin: 0 auto;
+  position: relative;
+  width: 1200px;
+}
+
+.kindWordsCopy {
+  display: flex;
+  flex-direction: column;
+  height: 793px;
+  justify-content: center;
+  left: 106px;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  z-index: 1;
+}
+
+.kindWordsEyebrow {
+  font-family: "Mr Eaves Mod Regular", "Futura LT", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  line-height: 1.8;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+.kindWordsStatement {
+  font-family: "Canela Thin", "Quarto", Georgia, serif;
+  font-size: 42px;
+  font-weight: 200;
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+.kindWordsSignature {
+  color: #666;
+  font-family: "BonVivant", "Quarto", cursive;
+  font-size: 33px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.kindWordsNote {
+  font-family: "Nunito", "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.kindWordsImage {
+  height: 793px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 594px;
+}
+
+@media (max-width: 767px) {
+  .valuesBand {
+    height: 383px;
+  }
+
+  .valuesCopy {
+    gap: 12px;
+    margin: 0;
+    padding-inline: 30px;
+  }
+
+  .valuesCopy p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .valuesMarks {
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  .valuesMark {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .discovery {
+    height: 779px;
+    min-height: 0;
+  }
+
+  .discoveryStage {
+    position: relative;
+    display: block;
+    height: 779px;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .discoveryPrimary,
+  .discoverySecondary,
+  .discoveryScript,
+  .discoveryHeadline,
+  .discoveryBody {
+    position: absolute;
+  }
+
+  .discoveryPrimary {
+    top: 82px;
+    left: 0;
+    width: 185px;
+    height: 330px;
+  }
+
+  .discoveryScript {
+    top: 35px;
+    left: 24px;
+    width: 210px;
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .discoveryHeadline {
+    top: 150px;
+    left: 156px;
+    width: 154px;
+  }
+
+  .displayCaps,
+  .displayItalic {
+    font-size: 45px;
+  }
+
+  .discoverySmall {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .discoveryBody {
+    top: 465px;
+    left: 24px;
+    width: 220px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .discoverySecondary {
+    top: 448px;
+    right: 0;
+    left: auto;
+    width: 145px;
+    height: 260px;
+  }
+
+  .filmDivider {
+    height: 233px;
+  }
+
+  .desktopFilm {
+    display: none;
+  }
+
+  .mobileFilm {
+    display: block;
+  }
+
+  .portfolio {
+    height: 1167px;
+  }
+
+  .portfolioStage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 1167px;
+    width: 100%;
+  }
+
+  .portfolioEyebrow,
+  .portfolioTitle,
+  .portfolioGrid,
+  .portfolioButton {
+    left: auto;
+    position: relative;
+    top: auto;
+  }
+
+  .portfolioEyebrow {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-top: 28px;
+    width: auto;
+  }
+
+  .portfolioTitle {
+    font-size: 45px;
+    line-height: 1;
+    margin: 4px 0 10px;
+    width: auto;
+  }
+
+  .portfolioGrid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .workPanel {
+    flex: 0 0 325px;
+    height: 325px;
+    left: auto;
+    position: relative;
+    top: auto;
+    width: 265px;
+  }
+
+  .workPanelweddings {
+    order: 1;
+  }
+
+  .workPaneleditorial {
+    order: 2;
+  }
+
+  .workPanelportraits {
+    order: 3;
+  }
+
+  .workRevealImage,
+  .workShade,
+  .workRevealCopy {
+    display: none;
+  }
+
+  .workCoverImage {
+    inset: 0;
+    opacity: 1;
+    position: absolute;
+  }
+
+  .workMobileTitle {
+    bottom: 24px;
+    display: block;
+    font-family: "Mr Eaves Mod Regular", "Futura LT", Arial, sans-serif;
+    font-size: 11px;
+    left: 0;
+    letter-spacing: 0.15em;
+    line-height: 1.8;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+
+  .workPanel::after {
+    background: rgb(0 0 0 / 25%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .portfolioButton {
+    flex: 0 0 43px;
+    height: 43px;
+    margin-top: 14px;
+    width: 185px;
+  }
+
+  .kindWords {
+    background: #f9f7f4;
+    height: 855px;
+  }
+
+  .kindWordsStage {
+    display: flex;
+    flex-direction: column;
+    height: 855px;
+    width: 100%;
+  }
+
+  .kindWordsCopy {
+    box-sizing: border-box;
+    flex: 0 0 455px;
+    height: 455px;
+    justify-content: flex-start;
+    left: auto;
+    padding: 56px 30px 40px;
+    position: relative;
+    top: auto;
+    width: 100%;
+  }
+
+  .kindWordsEyebrow {
+    color: #666;
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+
+  .kindWordsStatement {
+    color: #666;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .kindWordsSignature {
+    color: #8c8c8c;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  .kindWordsNote {
+    color: #8c8c8c;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .kindWordsImage {
+    flex: 0 0 400px;
+    height: 400px;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .workCoverImage,
+  .workRevealCopy {
+    transition: none;
+  }
+}
