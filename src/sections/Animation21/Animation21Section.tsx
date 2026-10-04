@@ -42,7 +42,7 @@ export default function Animation21Section() {
   useGSAP(
     (_context, contextSafe) => {
       const root = sectionRef.current;
-      if (!root) return;
+      if (!root || !contextSafe) return;
 
       const reduced = window.matchMedia(
         "(prefers-reduced-motion: reduce)",

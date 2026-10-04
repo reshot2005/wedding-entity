@@ -75,9 +75,10 @@ const triggerFlipOnScroll = (
     .map((item) => (item.children.length > 0 ? [...item.children] : []))
     .flat();
 
-  const flipTargets = galleryCaption
-    ? [galleryItems, galleryCaption]
-    : [galleryItems];
+  const flipTargets: Element[] = [...galleryItems];
+  if (galleryCaption) {
+    flipTargets.push(galleryCaption);
+  }
 
   // Codrops pattern: capture the final layout, revert to the start layout,
   // then scrub Flip.to so items travel from scatter → stack.
@@ -86,6 +87,9 @@ const triggerFlipOnScroll = (
     props: "filter, opacity",
   });
   galleryEl.classList.remove("gallery--switch");
+
+  const pinTarget = galleryEl.parentElement;
+  if (!pinTarget) return;
 
   const tl = Flip.to(flipstate, {
     ease: "none",
@@ -97,7 +101,7 @@ const triggerFlipOnScroll = (
       trigger: galleryEl,
       start: settings.scrollTrigger.start,
       end: settings.scrollTrigger.end,
-      pin: galleryEl.parentNode,
+      pin: pinTarget,
       scrub: true,
       anticipatePin: 1,
     },
